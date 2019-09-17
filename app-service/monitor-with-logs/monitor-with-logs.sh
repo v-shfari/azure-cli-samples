@@ -20,4 +20,4 @@ az webapp log config --name $appName --resource-group myResourceGroup --applicat
 curl -s -L $url/404
 
 # Download the log files for review
-az webapp log download --name $webappname --resource-group myResourceGroup
+az webapp log download --name $appName --resource-group myResourceGroup
