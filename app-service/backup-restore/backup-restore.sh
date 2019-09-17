@@ -11,4 +11,4 @@ az webapp config backup list --resource-group $groupname --webapp-name $webappna
 # Restore the app by overwriting it with the backup data
 # Be sure to replace <backupItemName> and <storageAccountUrl>
 az webapp config backup restore --resource-group $groupname --webapp-name $webappname \
---backup-name <backupItemName> --container-url <storageAccountUrl> --overwrite
+--backup-name <backupItemName> --container-url <sas-storageAccountUrl> --overwrite
