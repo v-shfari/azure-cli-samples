@@ -21,6 +21,9 @@ az webapp deployment user set --user-name $username --password $password
 url=$(az webapp deployment source config-local-git --name $webappname \
 --resource-group myResourceGroup --query url --output tsv)
 
+#  use below command if $gitdirectory not exist
+mkdir $gitdirectory
+
 # Add the Azure remote to your local Git respository and push your code
 cd $gitdirectory
 git remote add azure $url
