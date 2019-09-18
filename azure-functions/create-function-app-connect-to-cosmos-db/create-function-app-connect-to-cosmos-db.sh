@@ -35,7 +35,7 @@ endpoint=$(az cosmosdb show \
   --query documentEndpoint \
   --output tsv)
 
-key=$(az cosmosdb list-keys \
+key=$(az cosmosdb keys list \
   --name $functionAppName \
   --resource-group myResourceGroup \
   --query primaryMasterKey \
