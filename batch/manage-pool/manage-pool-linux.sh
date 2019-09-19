@@ -12,7 +12,7 @@ az batch account create \
 # Authenticate Batch account CLI session.
 az batch account login \
     --resource-group myResourceGroup \
-    --name mybatchaccount
+    --name mybatchaccount \
     --shared-key-auth
 
 # Retrieve a list of available images and node agent SKUs.
