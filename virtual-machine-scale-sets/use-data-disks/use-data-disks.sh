@@ -18,7 +18,7 @@ az vmss create \
 # Attach an additional 128Gb data disk
 az vmss disk attach \
   --resource-group myResourceGroup \
-  --name myScaleSet \
+  --vmss-name myScaleSet \
   --size-gb 128
 
 # Install the Azure Custom Script Extension to run a script that prepares the data disks
