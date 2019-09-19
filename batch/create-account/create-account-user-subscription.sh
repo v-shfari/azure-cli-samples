@@ -23,8 +23,8 @@ az keyvault set-policy \
     --resource-group myResourceGroup \
     --name mykevault \
     --spn ddbf3205-c6bd-46ae-8127-60eb93363864 \
-    --key-permissions all \
-    --secret-permissions all
+    --key-permissions backup create decrypt delete encrypt get import list purge recover restore sign unwrapKey update verify wrapKey \
+    --secret-permissions backup delete get list purge recover restore set
 
 # Create the Batch account, referencing the Key Vault either by name (if they
 # exist in the same resource group) or by its full resource ID.
