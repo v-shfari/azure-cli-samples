@@ -27,8 +27,7 @@ az batch account login \
 az batch application create \
     --resource-group myResourceGroup \
     --name mybatchaccount \
-    --application-id myapp \
-    --display-name "My Application"
+    --application-name myapp \
 
 # An application can reference multiple application executable packages
 # of different versions. The executables and any dependencies need
