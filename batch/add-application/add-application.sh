@@ -15,7 +15,7 @@ az batch account create \
     --name mybatchaccount \
     --storage-account mystorageaccount \
     --resource-group myResourceGroup \
-    --location eastus
+    --location westeurope
 
 # Authenticate against the account directly for further CLI interaction.
 az batch account login \
